@@ -17,15 +17,15 @@
 
 %% Let's add the border on the top
 \AddToShipoutPicture{% 
-    \AtPageTopLeft{% 
-        \put(\LenToUnit{\dimexpr\paperheight-3cm},0){% 
-            \color{light}\rule{3cm}{\LenToUnit\paperwidth}%
+    \AtPageUpperLeft{% 
+        \put(\LenToUnit{\dimexpr\paperheight -3cm},0){% 
+            \color{dark}\rule{3cm}{\LenToUnit\paperwidth}%
           }%
      }%
      % logo
-    \AtPageTopLeft{% start the bar at the bottom right of the page
-        \put(\LenToUnit{\dimexpr\paperheight-2.25cm},27.2cm){% move it to the top right
-            \color{light}\includegraphics[width=1.5cm]{_extensions/IA_Reports/IA-Graphic01-Color-LRG.png}
+    \AtPageUpperLeft{% start the bar at the top
+        \put(\LenToUnit{\dimexpr\paperheight 2.25cm},27.2cm){% move it to the top left
+            \color{dark}\includegraphics[width=1.5cm]{_extensions/intertidalagency/IA_Reports/IA-Graphic01-Color-LRG.png}
           }%
      }%
 }
@@ -58,8 +58,20 @@
 \makeatother
 
 %% Use some custom fonts
-\titlefont{Raleway}[
+\setsansfont{OpenSans}[
+    Path=_extensions/intertidalagency/IA_Reports/Open_Sans/static,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
     ]
 
-\setmainfont{Open Sans}[
+\setmainfont{Raleway}[
+    Path=_extensions/intertidalagency/IA_Reports/Raleway/static,
+    Scale=0.9,
+    Extension = .ttf,
+    UprightFont=*-Regular,
+    BoldFont=*-Bold,
+    ItalicFont=*-Italic,
     ]
