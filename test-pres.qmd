@@ -1,0 +1,42 @@
+---
+title: "IA Presentation Template Quarto"
+author: Rachael Blake
+format: 
+  revealjs:
+    theme: [default, ia-brand.css]
+    logo: /images/IA-Graphic03-White-LRG-01.png
+title-slide-attributes:
+  data-background-image: /images/IA-Graphic01-White-LRG.png
+  data-background-size: 3500px
+  data-background-position: bottom 3% left 50%
+  data-background-color: "#034969"
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+---
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+---
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+---
+
+## New Slide Test
+
+This is a test. Thanks for looking.
